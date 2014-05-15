@@ -25,7 +25,7 @@ $theme.include($body_top_include)
 
 	<header id="banner" role="banner">
 				
-						
+						## TODO: review mje 15.04.: pls don't use tables here - just do it with divs! 
 						<table class="heading-partition" border="0" cellspacing="0" cellpadding="0" style="vertical-align:bottom;">
 						<tr>
 						<td>
@@ -57,7 +57,10 @@ $theme.include($body_top_include)
 	#end
 		
 	</header>
-
+ 
+ ## TODO: review mje 15.04.: pls don't use tables here - we don't need adverts & sponsoring in current layout
+ ## TODO: review mje 15.04.: include body top is missing here !
+   
 	<table border="0" cellspacing="0" cellpadding="0" width="100%">
 		<cols>
 			<col width="90%">

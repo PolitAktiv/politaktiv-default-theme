@@ -1,6 +1,10 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.0.2 - 
+--------------------
+* added css for login
+
 6.2.0.1 - 21.02.2014
 --------------------
 initial release after forking liferay classic

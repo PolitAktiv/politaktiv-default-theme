@@ -49,3 +49,20 @@ div.politaktiv-theme-footer ul li a {
 #footer {
   text-align: right;
 }
+
+/*-------------- Header-Alignment-----------*/
+.site-title{
+   float:left;
+}
+
+#communityName-languagePortlet-container{
+  float:left;
+}
+
+#heading{
+  height:81px; /*height of politaktiv logo = velocity variable $site_logo_height */
+  margin:20px; 
+}
+
+
+

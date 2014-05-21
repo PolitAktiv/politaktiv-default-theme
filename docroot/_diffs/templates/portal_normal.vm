@@ -20,81 +20,57 @@ $theme.include($body_top_include)
 
 #dockbar()
 
-<div id="wrapper">
-	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
-
+<div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">
-				
-						## TODO: review mje 15.04.: pls don't use tables here - just do it with divs! 
-						<table class="heading-partition" border="0" cellspacing="0" cellpadding="0" style="vertical-align:bottom;">
-						<tr>
-						<td>
-							<h1 class="company-title">
-							<a class="$logo_css_class" href="$company_url" title="#language("go-to") $company_name">
-								<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-							</a>
-						</td>
-						
-						#*
-							<td>
-							#if ($show_site_name)
-								<span class="site-name" title="#language("go-to") $site_name">
-									$site_name
-								</span>
-							#end
-							</td>
-						*#
-						<td>
-						$theme.runtime('82_INSTANCE_MAIN', '', $velocityPortletPreferences.toString())
-						</td>
-						</tr>
-						
-						</table>
+		<div id="heading">
+			<h1 class="site-title">
+				<a class="$logo_css_class" href="$company_url" title="#language_format ("go-to-x", [$site_name])">
+					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 
-		
-	#if ($has_navigation)
-		#parse ("$full_templates_path/navigation.vm")
-	#end
-		
-	</header>
- 
- ## TODO: review mje 15.04.: pls don't use tables here - we don't need adverts & sponsoring in current layout
- ## TODO: review mje 15.04.: include body top is missing here !
-   
-	<table border="0" cellspacing="0" cellpadding="0" width="100%">
-		<cols>
-			<col width="90%">
-			<col width="10%">
-		</cols>
-		<tbody>
-			<tr><td class="content">
-				<div id="content">
-					#if ($selectable)
-						$theme.include($content_include)
-					#else
-						$portletDisplay.recycle()
-			
-						$portletDisplay.setTitle($the_title)
-			
-						$theme.wrapPortlet("portlet.vm", $content_include)
+					#if ($show_site_name)
+						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+							$site_name
+						</span>
 					#end
+				</a>
+
+			</h1>
+			<div id="communityName-languagePortlet-container">
+
+				<h2 class="community-name">
+					<span>$community_name </span>
+				</h2>
+	
+				<div class="language-portlet-container">
+					$theme.runtime('82_INSTANCE_MAIN', '', $velocityPortletPreferences.toString())
 				</div>
-			</td>
-			<td class="sponsoring_and_advertisement">
-				<div class="sponsoring">
-					$sponsorContent
-				</div>
-				<div class="advertisement">
-					$advertisementContent
-				</div>
-			</td>
-			
-			</tr>
-		</tbody>
-	</table>
+			</div>
+
+ 
+
+		</div>
+
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+
+	<div id="content">
+		<nav id="breadcrumbs">#breadcrumbs()</nav>
+
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
 
 	<footer id="footer" role="contentinfo">
-		$footerContent
+		<span> $footerContent </span>
 	</footer>
 </div>
 

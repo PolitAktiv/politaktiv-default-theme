@@ -1,3 +1,14 @@
+/*-------------- font sizes -------------*/
+/*----------------reducing heading sizes ----------------*/
+.aui h1 {
+  font-size: 24px; }
+
+.aui h2 {
+  font-size: 20px; }
+
+.aui h3 {
+  font-size: 18px; }
+
 /* ---------- login styles ---------- */
 .login-description-article { max-width: 50%; float: right;}
 .login-content { max-width: 50%; float: left;}
@@ -10,6 +21,16 @@
 
 /* ---------- footer styles ---------- */
 /* Todo Review: pleae found out whats the difference btwn. div.bla and .bla */ 
+
+/* Answer: 
+
+  .bla selects all elements with class="bla"
+  
+  div.bla selects all div-Elements with class="bla" only
+  
+  ---> .bla is the union of all *.bla elements 
+
+*/
 
 div.politaktiv-theme-footer {
   border-top: 1px solid #000000;

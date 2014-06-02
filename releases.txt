@@ -1,6 +1,11 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.0.2 
+------------------
+migration to 6.2.1
+contains language-portlet and footer
+
 6.2.0.2 - 
 --------------------
 * added css for login

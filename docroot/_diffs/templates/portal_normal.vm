@@ -42,7 +42,9 @@ $theme.include($body_top_include)
 				</h2>
 	
 				<div class="language-portlet-container">
-					$theme.runtime('82_INSTANCE_MAIN', '', $velocityPortletPreferences.toString())
+          
+          #embedPortletUsing($portletId, $requestVars, $preferences, $overrideDbPrefs)
+          
 				</div>
 			</div>
 

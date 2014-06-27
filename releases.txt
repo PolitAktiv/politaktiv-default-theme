@@ -1,6 +1,10 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.0.3
+------------------
+workaround for Language-Portlet error, see https://jira.intra.politaktiv.org/browse/PA-646
+
 6.2.0.2 
 ------------------
 migration to 6.2.1

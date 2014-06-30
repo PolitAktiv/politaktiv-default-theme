@@ -29,7 +29,7 @@ $theme.include($body_top_include)
 
 					#if ($show_site_name)
 						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-							$site_name
+							$site_name      
 						</span>
 					#end
 				</a>
@@ -43,7 +43,7 @@ $theme.include($body_top_include)
 	
 				<div class="language-portlet-container">
           
-          #embedPortletUsing($portletId, $requestVars, $preferences, $overrideDbPrefs)
+          $theme.runtime('82', '', $velocityPortletPreferences.toString())
           
 				</div>
 			</div>

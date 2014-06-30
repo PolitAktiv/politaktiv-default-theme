@@ -67,25 +67,3 @@ This file allows you to override and define new Velocity variables.
 
 #*Hide dockbar on top of the page*#
 #set ($css_class = "${css_class} dockbar-split")
-
-
-## important: this is a workaround for the Language-Portlet-Issue described here: https://jira.intra.politaktiv.org/browse/PA-646
-## read the selected section of the following link, what is done here
-##http://www.liferay.com/de/community/wiki/-/wiki/Main/Embedding+a+portlet+in+the+theme#section-Embedding+a+portlet+in+the+theme-Changing+the+Portlet+Preferences
-## the most important part:
-##  "It is suggested that you set up your VM code to pass 'true' (for $overrideDbPrefs) only in development, and 'false' in production."
- 
-  #macro (embedPortletUsing, $portletId, $requestVars, $preferences, $overrideDbPrefs)
-    #if ($overrideDbPrefs)
-      #set ($locPortletPreferenceService = $serviceLocator.findService("com.liferay.portal.service.PortletPreferencesLocalService"))
-      #set ($locPlidLong = $getterUtil.getLong($plid))
-      $locPortletPreferenceService.deletePortletPreferences(0, 3, $locPlidLong, $portletId)
-    #end
-  
-    $taglibLiferay.runtime($portletId, $requestVars, $preferences)
-  #end
-  
-  #set($overrideDbPrefs = true)
-  #set($portletId = '82')
-  #set($requestVars = '')
-  #set($preferences = $velocityPortletPreferences.toString())

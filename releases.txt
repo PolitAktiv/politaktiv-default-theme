@@ -1,7 +1,11 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
-6.2.1.3 - 2014-07-02
+6.2.1.3 - 2014-07-04
+---------------------
+* Fixed java1.6 dependency
+
+6.2.0.3 - 2014-07-02
 ---------------------
 workaround for Language-Portlet error, see https://jira.intra.politaktiv.org/browse/PA-646
 

@@ -1,13 +1,26 @@
-/*-------------- font sizes -------------*/
-/*----------------reducing heading sizes ----------------*/
+/*---------------- adjust heading sizes - A2 ----------------*/
 .aui h1 {
-  font-size: 24px; }
+  font-size: 2em; }
 
 .aui h2 {
-  font-size: 20px; }
+  font-size: 1.6em; }
 
 .aui h3 {
-  font-size: 18px; }
+  font-size: 1.4em; }
+  
+.aui h4 {
+  font-size: 1.2em; }
+  
+/* ---------- A4.1 logo ---------- */
+.logo {
+    width: 17%;
+    margin: 0px;
+}
+
+.logo img {
+    width: 76%;
+    margin: 11% 13%;
+}
 
 /* ---------- login styles ---------- */
 .login-description-article { max-width: 50%; float: right;}
@@ -53,18 +66,18 @@ div.politaktiv-theme-footer ul li a {
 }
 
 /*-------------- Header-Alignment-----------*/
-.site-title{
-   float:left;
-}
-
 #communityName-languagePortlet-container{
   float:left;
 }
 
+/*
+.site-title{
+   float:left;
+}
 #heading{
-  height:81px; /*height of politaktiv logo = velocity variable $site_logo_height */
+  height:81px; height of politaktiv logo = velocity variable $site_logo_height
   margin:20px; 
 }
-
+*/
 
 

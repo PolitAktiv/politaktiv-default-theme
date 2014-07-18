@@ -13,13 +13,17 @@
   
 /* ---------- A4.1 logo ---------- */
 .logo {
-    width: 17%;
-    margin: 0px;
+    width: 13%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2%;
+}
 }
 
 .logo img {
     width: 76%;
-    margin: 11% 13%;
+    /*margin: 11% 13%;*/
+    margin: 33px;
 }
 
 /* ---------- login styles ---------- */

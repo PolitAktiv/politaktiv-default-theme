@@ -1,30 +1,80 @@
 /*---------------- adjust heading sizes - A2 ----------------*/
-.aui h1 {
+.aui h1{
   font-size: 2em; }
 
-.aui h2 {
+.aui h2{
   font-size: 1.6em; }
 
-.aui h3 {
+.aui h3{
   font-size: 1.4em; }
   
-.aui h4 {
+.aui h4{
   font-size: 1.2em; }
   
-/* ---------- A4.1 logo ---------- */
-.logo {
-    width: 13%;
-    text-align: center;
-    vertical-align: middle;
+/* -------------- wrapper --------------*/
+.aui #wrapper {
+	max-width: 1440px;
+	padding: 0px 5em 0px;}
+
+/* ---------- logo ---------- */
+.logo{
+    float:left;
+    width: 12%;
     padding: 2%;
-}
+    text-align: center;
+    vertical-align: middle;}
+
+/*-------------- IST header -----------*/
+.ist-topbar{
+  position: relative;
+  float: left;
+  width: 84%;
+  height: 20px;
+  font-size: 0.75em;
+  background-color: black;
+  color: white;}
+
+/*-------------- Header-Content-----------*/
+.aui #banner .header-content{
+  position: relative;
+  float: left;
+  width: 68%;
+  height: 70px;
+  margin: 0px;
+  font-size: 2em;
+  text-align: center;
+  vertical-align: middle;}
+
+.static-social-bookmark{
+  float: left;
+  width: 16%;
+  height: 70px;}
+
+.aui #breadcrumbs {
+	float: left;
+  width: 68%;
+  margin: 0px;
+  font-size: 1em;
+  color: #676767;
+  background-color: #FAFAFA;}
+
+.language-container{
+  float: left;
+  width: 16%;
+  text-align: right;}
+  
+.language-container .portlet-borderless-container{
+	min-height: 0px;
+	padding: 0px;
 }
 
-.logo img {
-    width: 76%;
-    /*margin: 11% 13%;*/
-    margin: 33px;
-}
+
+/*-------------- Navigaton -----------*/
+.aui .navbar {
+	clear: both;
+	height: 30px;
+  font-size: 1em;
+  margin-bottom: 15px;}
 
 /* ---------- login styles ---------- */
 .login-description-article { max-width: 50%; float: right;}
@@ -39,49 +89,27 @@
 /* ---------- footer styles ---------- */
 div.politaktiv-theme-footer {
   border-top: 1px solid #000000;
-  text-align: center;
-}
+  text-align: center;}
 
 div.politaktiv-theme-footer ul {
   display: inline-block;
   list-style-type: none;
   margin: 0px;
   border: 0px;
-  padding: 0px;
-}
+  padding: 0px;}
 
 div.politaktiv-theme-footer ul li {
   float: left;
   color: #000000;
   font-size: 11px;
   font-weight: bold;
-  margin: 5px 15px 5px 15px;
-}
+  margin: 5px 15px 5px 15px;}
 
 div.politaktiv-theme-footer ul li a {
   text-decoration: none;
   color: #000000;
   font-size: inherit;
-  font-weight: inherit;
-}
+  font-weight: inherit;}
 
 #footer {
-  text-align: right;
-}
-
-/*-------------- Header-Alignment-----------*/
-#communityName-languagePortlet-container{
-  float:left;
-}
-
-/*
-.site-title{
-   float:left;
-}
-#heading{
-  height:81px; height of politaktiv logo = velocity variable $site_logo_height
-  margin:20px; 
-}
-*/
-
-
+  text-align: right;}

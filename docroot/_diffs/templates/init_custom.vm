@@ -19,29 +19,40 @@ This file allows you to override and define new Velocity variables.
 #set($bShowDockbarPortlet	= false)
 #set($show_site_name		= false)
 
-#* Set preferences for global language portlet. *#
+#* ---------- Set preferences for global language portlet. ------------ *#
 #set($void = $velocityPortletPreferences.setValue('displayStyle', '0'))
 #set($void = $velocityPortletPreferences.setValue('portletSetupShowBorders', 'false'))
 #* $languages defined in WEB-INF/liferay-look-and-feel.xml. *#
 #set($languages = $theme.getSetting("languages"))
 #set($void = $velocityPortletPreferences.setValue('languageIds', $languages))
 
+#* ------------------------------ ist-top-bar -------------------------------- *#
 #set($systemGroupId = $getterUtil.getLong($theme.getSetting("systemGroupId")))
+#set($istTopBarArticleId = $theme.getSetting("istTopBarArticleId"))
+#set($istTopBarContent = $journalContentUtil.getContent($systemGroupId, "$istTopBarArticleId", null, "$locale", $theme_display))
+
+#* -------------------------- static-social-bookmark-------------------------- *#
+#set($staticSocialBookmarId = $theme.getSetting("staticSocialBookmarId"))
+#set($staticSocialBookmarkContent = $journalContentUtil.getContent($systemGroupId, "$staticSocialBookmarId", null, "$locale", $theme_display))
+
+
+#* ------------------------------ footer -------------------------------- *#
 #set($footerArticleId = $theme.getSetting("footerArticleId"))
+#set($footerContent = $journalContentUtil.getContent($systemGroupId, "$footerArticleId", null, "$locale", $theme_display))
+
+#* ------------------------------ sponsor -------------------------------- *#
 #set($sponsorArticleId = $theme.getSetting("sponsorArticleId"))
 #set($advertisementId = $theme.getSetting("advertisementId"))
+#set($sponsorContent = $journalContentUtil.getContent($systemGroupId, "$sponsorArticleId", null, "$locale", $theme_display))
 
+#* --------------------------- advertisement ---------------------------- *#
 #set($gloabalAdvertisementContent = $journalContentUtil.getContent($systemGroupId, "$advertisementId", null, "$locale", $theme_display))
 #set($projectAdvertisementContent = $journalContentUtil.getContent($group_id, "$advertisementId", null, "$locale", $theme_display))
-
 #if( $projectAdvertisementContent )
 	#set($advertisementContent = $projectAdvertisementContent)
 #else
 	#set($advertisementContent = $gloabalAdvertisementContent)
 #end
-
-#set($footerContent = $journalContentUtil.getContent($systemGroupId, "$footerArticleId", null, "$locale", $theme_display))
-#set($sponsorContent = $journalContentUtil.getContent($systemGroupId, "$sponsorArticleId", null, "$locale", $theme_display))
 
 #if($permissionChecker.isOmniadmin())
 	#set($bIsOmniAdmin = true)

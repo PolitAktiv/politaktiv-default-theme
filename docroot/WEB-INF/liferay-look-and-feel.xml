@@ -8,11 +8,13 @@
 	<theme id="politaktiv-default" name="PolitAktiv Default Theme">
 		<settings>
 			<setting key="systemGroupId" value="10165" />
+			<setting key="istTopBarArticleId" value="SYSTEM_IST_TOP_BAR" />
+			<setting key="staticSocialBookmarId" value="SYSTEM_STATIC_SOCIAL_BM" />
 			<setting key="footerArticleId" value="SYSTEM_FOOTER" />
 			<setting key="sponsorArticleId" value="SYSTEM_SPONSOR" />
-      		<setting key="advertisementId" value="ADVERTISEMENT" />
-      		<setting key="languages" value="de_DE,en_US,es_ES,sv_SE" />
-      		<setting configurable="true" key="bullet-style" options="dots,arrows" type="select" value="dots" />
+      <setting key="advertisementId" value="ADVERTISEMENT" />
+      <setting key="languages" value="de_DE,en_US,es_ES,sv_SE" />
+      <setting configurable="true" key="bullet-style" options="dots,arrows" type="select" value="dots" />
 			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="true" />
 			<setting configurable="false" key="show-site-name-default" value="true" />
 			<setting configurable="false" key="show-site-name-supported" value="true" />

@@ -50,7 +50,7 @@
   width: 16%;
   height: 70px;}
 
-.aui #breadcrumbs {
+.aui #breadcrumbs{
 	float: left;
   width: 68%;
   margin: 0px;
@@ -70,46 +70,46 @@
 
 
 /*-------------- Navigaton -----------*/
-.aui .navbar {
+#navigation{
 	clear: both;
 	height: 30px;
   font-size: 1em;
   margin-bottom: 15px;}
 
 /* ---------- login styles ---------- */
-.login-description-article { max-width: 50%; float: right;}
-.login-content { max-width: 50%; float: left;}
-.login-navigation { max-width: 100%; clear: both;}
+.login-description-article{ max-width: 50%; float: right;}
+.login-content{ max-width: 50%; float: left;}
+.login-navigation{ max-width: 100%; clear: both;}
 
 /* ---------- registration styles ---------- */
-.registration-content { max-width:70%; float:left; }
-.registration-description-article { max-width:30%; float:right; }
-.registration-navigation { max-width:100%; clear: both; }
+.registration-content{ max-width:70%; float:left; }
+.registration-description-article{ max-width:30%; float:right; }
+.registration-navigation{ max-width:100%; clear: both; }
 
 /* ---------- footer styles ---------- */
-div.politaktiv-theme-footer {
+div.politaktiv-theme-footer{
   border-top: 1px solid #000000;
   text-align: center;}
 
-div.politaktiv-theme-footer ul {
+div.politaktiv-theme-footer ul{
   display: inline-block;
   list-style-type: none;
   margin: 0px;
   border: 0px;
   padding: 0px;}
 
-div.politaktiv-theme-footer ul li {
+div.politaktiv-theme-footer ul li{
   float: left;
   color: #000000;
   font-size: 11px;
   font-weight: bold;
   margin: 5px 15px 5px 15px;}
 
-div.politaktiv-theme-footer ul li a {
+div.politaktiv-theme-footer ul li a{
   text-decoration: none;
   color: #000000;
   font-size: inherit;
   font-weight: inherit;}
 
-#footer {
+#footer{
   text-align: right;}

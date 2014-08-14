@@ -143,3 +143,41 @@ div.politaktiv-theme-footer ul li a{
 
 #footer{
   text-align: right;}
+ 
+ 
+/* ---------- Layout Columns ---------- */
+
+/* Set width respectively to container width*/
+.aui .row-fluid .width5of12left{
+	width: 62%; 
+	float: left;
+	margin-right: 1%;
+}
+
+ .aui .row-fluid .width5of12right{
+ 	width: 62%;
+ 	float: right;
+ }
+
+.aui .row-fluid .width3of12left{
+	width: 37%; 
+	float: left;
+	margin-right: 1%;
+}
+
+.aui .row-fluid .width3of12right{
+	width: 37%;
+	float: right;
+} 
+
+.aui .row-fluid .width4of12left{
+	width: 49.5%; 
+	float: left;
+	margin-right: 1%;
+}
+
+.aui .row-fluid .width4of12right{
+	width: 49.5%;
+	float: right;
+}
+

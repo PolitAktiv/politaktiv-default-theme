@@ -3,6 +3,9 @@ politaktiv-theme ReleaseNotes:
 
 6.2.1.6
 ---------------------
+* Added CSS that is used to fulfill A-5: 3 new Layouts
+* Changed width of certain Layout Columns, 
+	because bootstrap cannot handle them as we want it 
 
 
 6.2.1.5 - 2014-08-02

@@ -17,15 +17,21 @@
 	padding: 0px 5em 0px;}
 
 /*-------------- IST header -----------*/
+
+
 .ist-topbar{
   position: relative;
-  float: right;
-  width: 68%;
+  float: right;	
   height: 20px;
-  padding-right: 16%;
   font-size: 0.8em;
   background-color: black;
-  color: white;}
+  color: white;
+  background-clip: content-box;
+
+}
+
+
+
 
 /* ---------- logo ---------- */
 .logo{
@@ -58,7 +64,7 @@
   
 /*-------------- Breadcrumbs -----------*/
 .aui #breadcrumbs{
-	float: left;
+  float: left;
   width: 68%;
   margin: 0px;
   font-size: 1em;
@@ -96,8 +102,8 @@
 .aui #navigation{
 	clear: both;
 	height: 28px;
-  font-size: 1em;
-  margin-bottom: 15px;}
+    font-size: 1em;
+    margin-bottom: 15px;}
   
 .aui #navigation .navbar-inner{
 	min-height: 28px;}

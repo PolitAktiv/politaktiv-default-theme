@@ -20,16 +20,19 @@ $theme.include($body_top_include)
 
 #dockbar()
 
+
+
+
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">	
 		<div id="heading">
-      
-      <div class="ist-topbar">
-        <span> $istTopBarContent </span>
-      </div>
-      
+		
+            <div id="ist-topbar-container" class="ist-topbar">
+             	<span> $istTopBarContent </span>
+	     	</div>
+
 			<h1 class="site-title">
-				<a class="$logo_css_class" href="$company_url" title="#language_format ("go-to-x", [$site_name])">
+				<a id="pa-logo" class="$logo_css_class" href="$company_url" title="#language_format ("go-to-x", [$site_name])">
 					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
 
 					#if ($show_site_name)
@@ -40,25 +43,25 @@ $theme.include($body_top_include)
 				</a>
 			</h1>			
 
-      <h2 class="header-content">
-        <span>$community_name </span>
-      </h2>	    
-
-      <div class="static-social-bookmark">
-        <span> $staticSocialBookmarkContent </span>
-      </div>
-      
-      <nav id="breadcrumbs">#breadcrumbs()</nav>
-        
-      <div class="language-container">      
-          $theme.runtime('82', '', $velocityPortletPreferences.toString())
-      </div>
+	      	<h2 class="header-content">
+	        	<span>$community_name </span>
+	      	</h2>	    
+	
+	     	 <div class="static-social-bookmark">
+	       		<span> $staticSocialBookmarkContent </span>
+	     	 </div>
+	      
+	      	<nav id="breadcrumbs">#breadcrumbs()</nav>
+	        
+	      	<div class="language-container">      
+	          	$theme.runtime('82', '', $velocityPortletPreferences.toString())
+	     	</div>
 		</div>
+	
+			#if ($has_navigation || $is_signed_in)
+				#parse ("$full_templates_path/navigation.vm")
+			#end
 
-		#if ($has_navigation || $is_signed_in)
-			#parse ("$full_templates_path/navigation.vm")
-		#end
-	</header>
 
 	<div id="content">
 
@@ -81,6 +84,34 @@ $theme.include($body_top_include)
 $theme.include($body_bottom_include)
 
 $theme.include($bottom_include)
+
+
+
+<script>   
+	 function setISTTopbar() {
+	
+	// get necessairy widths
+		var bannerWidth = document.getElementById("banner").offsetWidth;
+		var innerNavWidth = document.getElementById("_145_navAccountControls").offsetWidth;
+		var paLogoWidth = document.getElementById("pa-logo").offsetWidth;
+		
+	// set new Padding and Width of IST-Topbar	
+		var newPaddingValue = (innerNavWidth + 10 ); // additional 10px Padding to make it look better
+		var newPadding = newPaddingValue + "px";
+		var newWidthValue = (bannerWidth - paLogoWidth - newPaddingValue);
+		var newWidth = newWidthValue + "px";
+	
+	// Apply new Styles	
+		document.getElementById("ist-topbar-container").style.paddingRight= newPadding;
+		document.getElementById("ist-topbar-container").style.width= newWidth;
+
+	} 
+ 	window.onload = setISTTopbar();  
+</script>
+
+<script>
+	window.onresize = setISTTopbar;
+</script>
 
 </body>
 

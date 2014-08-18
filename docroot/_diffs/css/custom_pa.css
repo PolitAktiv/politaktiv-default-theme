@@ -11,6 +11,12 @@
 .aui h4{
   font-size: 1.2em; }
   
+/*-----------------reduce font size--------------------*/
+
+.aui body{
+	font-size: 12px;
+}
+  
 /* -------------- wrapper --------------*/
 .aui #wrapper {
 	max-width: 1440px;

@@ -1,6 +1,12 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.7 - 2014-08-19
+--------------------
+* new font-size
+* dynamic IST-Topbar (concerning width)
+* word wrapping realised
+
 6.2.1.6
 ---------------------
 * Added CSS that is used to fulfill A-5: 3 new Layouts

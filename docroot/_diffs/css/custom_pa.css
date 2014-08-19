@@ -53,6 +53,9 @@
 .aui .portlet-message-boards .header-title, 
 .aui .portlet-message-boards .thread-body {
 	word-break: normal;
+	-moz-hyphens: none; /*Avoid hyphenation (ger: Silbentrennung), requested by MoM*/
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
 }
 
 /* ---------- logo ---------- */

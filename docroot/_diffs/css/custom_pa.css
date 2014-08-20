@@ -33,9 +33,6 @@
   background-color: black;
   color: white;
   background-clip: content-box;
-
-  /*Default values for Padding and Width, in case javascript is not supported*/
-  /*We use javascript in the templates to dynamically adjust the width of the IST-Topbar*/
   width: 68%;
   padding-right: 16%;
 }

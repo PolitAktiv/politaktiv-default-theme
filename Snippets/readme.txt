@@ -1,0 +1,4 @@
+- Template hat variable IST-Topbar
+- Zurückgestellt, da:
+	- trifft nicht die Spezifikationsvorgaben
+	- noch nicht ausführlich getestet (javascript!)

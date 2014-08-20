@@ -27,7 +27,7 @@ $theme.include($body_top_include)
 	<header id="banner" role="banner">	
 		<div id="heading">
 		
-            <div class="ist-topbar">
+            <div id="ist-topbar-container" class="ist-topbar">
              	<span> $istTopBarContent </span>
 	     	</div>
 
@@ -84,6 +84,34 @@ $theme.include($body_top_include)
 $theme.include($body_bottom_include)
 
 $theme.include($bottom_include)
+
+
+
+<script>   
+	 function setISTTopbar() {
+	
+	// get necessairy widths
+		var bannerWidth = document.getElementById("banner").offsetWidth;
+		var innerNavWidth = document.getElementById("_145_navAccountControls").offsetWidth;
+		var paLogoWidth = document.getElementById("pa-logo").offsetWidth;
+		
+	// set new Padding and Width of IST-Topbar	
+		var newPaddingValue = (innerNavWidth + 10 ); // additional 10px Padding to make it look better
+		var newPadding = newPaddingValue + "px";
+		var newWidthValue = (bannerWidth - paLogoWidth - newPaddingValue);
+		var newWidth = newWidthValue + "px";
+	
+	// Apply new Styles	
+		document.getElementById("ist-topbar-container").style.paddingRight= newPadding;
+		document.getElementById("ist-topbar-container").style.width= newWidth;
+
+	} 
+ 	window.onload = setISTTopbar();  
+</script>
+
+<script>
+	window.onresize = setISTTopbar;
+</script>
 
 </body>
 

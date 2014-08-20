@@ -1,6 +1,11 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+
+6.2.1.8 - 2014-08-20
+* revert: IST-Topbar - now static again
+* fixed width of the 3 main columns in layout
+
 6.2.1.7 - 2014-08-19
 --------------------
 * new font-size

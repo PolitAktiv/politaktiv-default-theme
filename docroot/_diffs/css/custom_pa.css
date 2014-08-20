@@ -216,3 +216,18 @@ div.politaktiv-theme-footer ul li a{
 	float: right;
 }
 
+.aui .row-fluid .width2of12right{
+	width: 15%;
+	float: right;
+	margin-left: 1%;
+}
+
+.aui .row-fluid .width2of12left{
+	width: 15%;
+	float: left;
+}
+
+.aui .row-fluid .width8of12{
+	margin-left: 1%;
+	width: 68%;
+}

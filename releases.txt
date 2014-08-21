@@ -1,6 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.9 - 2014-08-21
+* IST-Topbar is on the very top of the page
+
 
 6.2.1.8 - 2014-08-20
 * revert: IST-Topbar - now static again

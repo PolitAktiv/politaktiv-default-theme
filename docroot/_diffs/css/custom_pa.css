@@ -37,9 +37,17 @@
   padding-right: 16%;
 }
 
+
+/*place IST header exactly on top of the page*/
+
+h1[class="site-title"]{
+    margin: 0px 0;
+}
+ 
+
 /* ---------- Word Wrapping ---------- */
 /* Avoid breaking words on not allowed breakpoints*/
-.aui pre, 
+a.aui pre, 
 .aui .navbar .nav li > a,
 .html-editor.portlet-message-boards,
 .aui .portlet-asset-publisher .asset-content,

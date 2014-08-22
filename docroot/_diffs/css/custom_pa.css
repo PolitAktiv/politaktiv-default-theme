@@ -144,7 +144,7 @@ a.aui pre,
   
 .aui #navigation li{
 	line-height: 16px;
-	padding: 1px 15px;}
+	padding: 1px 4px;}
 
 /* ---------- login styles ---------- */
 .login-description-article{ max-width: 50%; float: right;}

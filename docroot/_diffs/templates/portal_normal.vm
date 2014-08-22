@@ -62,7 +62,7 @@ $theme.include($body_top_include)
 				#parse ("$full_templates_path/navigation.vm")
 			#end
 
-
+	</header>
 	<div id="content">
 
 		#if ($selectable)

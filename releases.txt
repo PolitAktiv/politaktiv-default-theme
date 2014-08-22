@@ -1,6 +1,10 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.10 - 2014-08-2
+* distance between menu bar items is reduced 
+* header h2, h3 issue is fixed (structural bug in template)
+
 6.2.1.9 - 2014-08-21
 * IST-Topbar is on the very top of the page
 

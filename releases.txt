@@ -1,6 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.11 - 2014-09-04
+* fixed mobile view of navbar
+
 6.2.1.10 - 2014-08-2
 * distance between menu bar items is reduced 
 * header h2, h3 issue is fixed (structural bug in template)

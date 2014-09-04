@@ -135,16 +135,20 @@ a.aui pre,
 /*-------------- Navigaton -----------*/
 .aui #navigation{
 	clear: both;
-	height: 28px;
+/*	height: 28px; */ /*removed, destroyed mobile view of navbar*/
     font-size: 1em;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+}
   
+
 .aui #navigation .navbar-inner{
-	min-height: 28px;}
+	min-height: 28px;
+}
   
 .aui #navigation li{
 	line-height: 16px;
-	padding: 1px 4px;}
+	padding: 1px 4px;
+}
 
 /* ---------- login styles ---------- */
 .login-description-article{ max-width: 50%; float: right;}

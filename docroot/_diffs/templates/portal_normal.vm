@@ -20,9 +20,6 @@ $theme.include($body_top_include)
 
 #dockbar()
 
-
-
-
 <div class="container-fluid" id="wrapper">
 	<header id="banner" role="banner">	
 		<div id="heading">
@@ -37,21 +34,25 @@ $theme.include($body_top_include)
 
 					#if ($show_site_name)
 						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-							$site_name      
+							$site_name 
 						</span>
 					#end
 				</a>
 			</h1>			
+		<div id="header-content-container">
+		      	<h2 class="header-content">
+		        	<span>$community_name</span>
+		      	</h2>	    
+		 	<nav id="breadcrumbs">#breadcrumbs()</nav>
+			<div id="header-background-image" style="background-image: url($background_image_url);">
+				#*div exists to provide absolute background-picture position*#
+			</div>
+		</div>
 
-	      	<h2 class="header-content">
-	        	<span>$community_name </span>
-	      	</h2>	    
-	
 	     	 <div class="static-social-bookmark">
 	       		<span> $staticSocialBookmarkContent </span>
 	     	 </div>
-	      
-	      	<nav id="breadcrumbs">#breadcrumbs()</nav>
+	        
 	        
 	      	<div class="language-container">      
 	          	$theme.runtime('82', '', $velocityPortletPreferences.toString())

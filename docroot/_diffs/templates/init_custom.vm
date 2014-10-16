@@ -78,3 +78,6 @@ This file allows you to override and define new Velocity variables.
 
 #*Hide dockbar on top of the page*#
 #set ($css_class = "${css_class} dockbar-split")
+
+#*Background-Picture of Header*#
+#set ($background_image_url = "${company_url}webdav${page_group.getFriendlyURL()}/document_library/header-hintergrund")

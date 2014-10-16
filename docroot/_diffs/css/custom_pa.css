@@ -79,13 +79,14 @@ a.aui pre,
 .aui #banner .header-content{
   position: relative;
   float: left;
-  width: 68%;
+  width: 100%;
   height: 70px;
   line-height: 70px;
-  margin: 0px;
   font-size: 2em;
+  margin: 0px;
   text-align: center;
-  vertical-align: middle;}
+  vertical-align: middle;
+}
 
 .static-social-bookmark{
 	float: right;
@@ -95,6 +96,40 @@ a.aui pre,
   line-height: 70px;
   text-align: right;
   vertical-align: middle;}
+  
+/*-------------- Header-Content Background-Image -------------*/
+
+
+#header-content-container{
+  position: relative;
+  float: left;
+  width: 68%;
+  height: 96px; /* 70px + 26px */
+  margin: 0px;
+  vertical-align: middle;
+}
+
+#header-background-image{
+
+  /*set absolute position to make it lay "behind" the other divs in the container*/
+  position: absolute;
+
+  /*fixed height -> avoid picture getting smaller in y-dimension*/
+  height: 96px; 
+  
+  /*variable width -> picture always fits exactly the containter width*/
+  width: 100%;
+
+  /*set opactiy*/
+  opacity: 0.5;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+
+  /*center the background picture*/
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
+	
+}
   
 /*-------------- Breadcrumbs -----------*/
 .aui #breadcrumbs{
@@ -240,3 +275,5 @@ div.politaktiv-theme-footer ul li a{
 	margin-left: 1%;
 	width: 68%;
 }
+
+

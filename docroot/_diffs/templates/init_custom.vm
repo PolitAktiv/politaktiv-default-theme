@@ -54,6 +54,10 @@ This file allows you to override and define new Velocity variables.
 	#set($advertisementContent = $gloabalAdvertisementContent)
 #end
 
+#* ------------------------------ header background picture -------------------------------- *#
+#set($headerBackgroundImageId = $theme.getSetting("headerBackgroundImage"))
+#set($headerBackgroundImageLink = $journalContentUtil.getContent($getterUtil.getLong($group_id),$headerBackgroundImageId, null, "$locale", $theme_display))
+
 #if($permissionChecker.isOmniadmin())
 	#set($bIsOmniAdmin = true)
 #end
@@ -78,6 +82,3 @@ This file allows you to override and define new Velocity variables.
 
 #*Hide dockbar on top of the page*#
 #set ($css_class = "${css_class} dockbar-split")
-
-#*Background-Picture of Header*#
-#set ($background_image_url = "${company_url}webdav${page_group.getFriendlyURL()}/document_library/header-hintergrund")

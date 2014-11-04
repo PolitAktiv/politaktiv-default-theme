@@ -1,6 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.12 - 2014-11-04
+* customizable background-picture for Diskussionskreis-Header
+
 6.2.1.11 - 2014-09-04
 * fixed mobile view of navbar
 

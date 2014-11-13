@@ -40,10 +40,11 @@ $theme.include($body_top_include)
 				</a>
 			</h1>			
 		<div id="header-content-container">
-
-			<div id="header-background-image" style="background-image: url($headerBackgroundImageLink);">
-				#*div exists to provide absolute background-picture position*#
-			</div>
+			#if($headerBackgroundImageLink) #* works because null is evaluated as false*#
+				<div id="header-background-image" style="background-image: url($headerBackgroundImageLink);">
+					#*div exists to provide absolute background-picture position*#
+				</div>
+			#end
 		      	<h2 class="header-content">
 		        	<span>$community_name</span>
 		      	</h2>	    

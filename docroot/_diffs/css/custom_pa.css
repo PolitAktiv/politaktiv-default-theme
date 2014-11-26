@@ -179,10 +179,12 @@ a.aui pre,
 
 /*-------------- Navigaton -----------*/
 .aui #navigation{
-	clear: both;
-/*	height: 28px; */ /*removed, destroyed mobile view of navbar*/
+
+    clear: both;
     font-size: 1em;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
 }
   
 
@@ -285,5 +287,3 @@ div.politaktiv-theme-footer ul li a{
 	margin-left: 1%;
 	width: 68%;
 }
-
-

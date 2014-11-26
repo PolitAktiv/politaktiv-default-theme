@@ -24,22 +24,24 @@ $theme.include($body_top_include)
 	<header id="banner" role="banner">	
 		<div id="heading">
 		
-            <div class="ist-topbar">
-             	<span> $istTopBarContent </span>
-	     	</div>
-
+	            <div class="ist-topbar">
+	             	<span> $istTopBarContent </span>
+		    </div>
+		    <div id="site-title"> 
+	
 			<h1 class="site-title">
 				<a id="pa-logo" class="$logo_css_class" href="$company_url" title="#language_format ("go-to-x", [$site_name])">
-					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
-
+					<img alt="$logo_description"  src="$site_logo"  />
+	
 					#if ($show_site_name)
 						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
 							$site_name 
 						</span>
 					#end
 				</a>
-			</h1>			
-		<div id="header-content-container">
+			</h1>
+		   </div>			
+  		   <div id="header-content-container">
 			#if($headerBackgroundImageLink) #* works because null is evaluated as false*#
 				<div id="header-background-image" style="background-image: url($headerBackgroundImageLink);">
 					#*div exists to provide absolute background-picture position*#
@@ -50,16 +52,16 @@ $theme.include($body_top_include)
 		      	</h2>	    
 		 	<nav id="breadcrumbs">#breadcrumbs()</nav>
 
-		</div>
-
-	     	 <div class="static-social-bookmark">
-	       		<span> $staticSocialBookmarkContent </span>
-	     	 </div>
-	        
-	        
-	      	<div class="language-container">      
-	          	$theme.runtime('82', '', $velocityPortletPreferences.toString())
-	     	</div>
+		   </div>
+	
+		   <div class="static-social-bookmark">
+	     		<span> $staticSocialBookmarkContent </span>
+		   </div>
+		        
+		        
+		   <div class="language-container">      
+		          $theme.runtime('82', '', $velocityPortletPreferences.toString())
+	     	   </div>
 		</div>
 	
 			#if ($has_navigation || $is_signed_in)

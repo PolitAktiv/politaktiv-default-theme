@@ -1,5 +1,7 @@
 politaktiv-theme ReleaseNotes:
 ==============================
+6.2.1.13 - 2014-11-26
+* intermediate solution for faulty header <-- does not satisfy requirements yet
 
 6.2.1.12 - 2014-11-04
 * customizable background-picture for Diskussionskreis-Header

@@ -1,6 +1,9 @@
+/*also responds to phone, until explicit CSS available*/
+
+
 /*------ Header Tablet --------*/
 
-@media (max-width: 979px){
+@include respond-to(phone, tablet){ 
 
 	//fix banner position
 	#banner {

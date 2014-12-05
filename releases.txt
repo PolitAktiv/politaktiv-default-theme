@@ -1,5 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
+
+6.2.1.14 - 2014-12-05
+* intermediate fix for faulty custom layouts (Responsive Design)<-- does not satisfy requirements yet
+
 6.2.1.13 - 2014-11-26
 * intermediate solution for faulty header <-- does not satisfy requirements yet
 

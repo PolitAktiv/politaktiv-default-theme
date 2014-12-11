@@ -1,9 +1,6 @@
-/*also responds to phone, until explicit CSS available*/
-
-
 /*------ Header Tablet --------*/
 
-@include respond-to(phone, tablet){ 
+@include respond-to(tablet){ 
 
 	//fix banner position
 	#banner {
@@ -43,56 +40,82 @@
 	    width:0px;
 	}
 
-//reset custom layout columns 
 
-	.aui .row-fluid .width5of12left{
-		width: auto; 
-		float: left;
-		margin-right: initial;
-	}
-	
-	 .aui .row-fluid .width5of12right{
-	 	width: auto;
-	 	float: left;
-	 }
-	
-	.aui .row-fluid .width3of12left{
-		width: auto; 
-		float: left;
-		margin-right: initial;
-	}
-	
-	.aui .row-fluid .width3of12right{
-		width: auto;
-		float: left;
-	} 
-	
-	.aui .row-fluid .width4of12left{
-		width: auto; 
-		float: left;
-		margin-right: initial;
-	}
-	
-	.aui .row-fluid .width4of12right{
-		width: auto;
-		float: left;
-	}
-	
-	.aui .row-fluid .width2of12right{
-		width: auto;
-		float: left;
-		margin-left: initial;
-	}
-	
-	.aui .row-fluid .width2of12left{
-		width: auto;
-		float: left;
+		
+	//Change div order using flexbox
+	//add webkit for support reasons
+
+	//set containers
+
+	.flex-container{
+
+		display: -webkit-inline-flex;
+		display: -moz-inline-flex;
+		display: inline-flex;	//use flexbox
+
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		flex-wrap: wrap;	//break when insufficiant space 
 	}
 
 	.aui .row-fluid .width8of12{
-		margin-left: initial;
 		width: auto;
-	    float: left;
-    }
+	    	float: none;
+		-webkit-order: 3;
+		-moz-order: 3;
+		order: 3;	// third element thus below element 1 and 2
+		margin: 0px;
+		padding: 0px;
+    	}
+	
+	.aui .row-fluid .width2of12right{
+		width: 49%;
+		float: left;
+		margin: 0px;;
+		padding: 2px;
+
+		-webkit-order: 2;
+		-moz-order: 2;
+		order: 2;	// second element, thus to the right of element 1
+	}
+	
+	.aui .row-fluid .width2of12left{
+		width: 49%;
+		float: left;
+		margin: 0px;
+		padding: 2px;
+
+		-webkit-order: 1;
+		-moz-order: 1;
+		order: 1;	// first element, thus on the upper left corner
+	}
+
+
+	//set specified widths and margins
+
+	 .aui .row-fluid .width5of12right, .aui .row-fluid .width5of12left {
+		width: 61.5%;
+		float: none;
+		margin: 0px;
+		padding: 2px;
+	 }
+	
+	
+	.aui .row-fluid .width3of12right, .aui .row-fluid .width3of12left{
+		width: 36.5%;
+		float: none;
+		margin: 0px;
+		padding: 2px;
+	} 
+	
+	.aui .row-fluid .width4of12left, .aui .row-fluid .width4of12right{
+		width: 49%; 
+		float: none;
+		margin: 0px;
+		padding: 2px;
+	}
+
+
+
 
 }

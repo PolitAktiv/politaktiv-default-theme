@@ -1,0 +1,101 @@
+
+// intermediate default behavior
+
+
+
+@include respond-to(phone){ 
+
+
+/*------ Header Phone --------*/
+
+	//fix banner position
+	#banner {
+	    height: 96px;
+	    width: 100%;
+	    position: relative;
+	    bottom: 60px;
+	}
+	
+	.aui #heading{
+	    bottom: initial; 
+	    position: initial;
+	}
+	
+	.aui #heading .site-title img{
+	    width:initial;
+	}
+	
+	//fix logo
+	div #site-title{
+	    height: 96px; 
+	    float:left;
+	}
+	.logo {
+	    width: initial;
+	}
+
+	//make header-content-container big enough to hold navbar
+	#header-content-container{
+            height: auto;
+        }
+	
+	// hide other components
+	.ist-topbar, .static-social-bookmark, .language-container{
+	    visibility: hidden; 
+	    height:0px; 
+	    width:0px;
+	}
+
+//reset custom layout columns 
+
+	.aui .row-fluid .width5of12left{
+		width: auto; 
+		float: left;
+		margin-right: initial;
+	}
+	
+	 .aui .row-fluid .width5of12right{
+	 	width: auto;
+	 	float: left;
+	 }
+	
+	.aui .row-fluid .width3of12left{
+		width: auto; 
+		float: left;
+		margin-right: initial;
+	}
+	
+	.aui .row-fluid .width3of12right{
+		width: auto;
+		float: left;
+	} 
+	
+	.aui .row-fluid .width4of12left{
+		width: auto; 
+		float: left;
+		margin-right: initial;
+	}
+	
+	.aui .row-fluid .width4of12right{
+		width: auto;
+		float: left;
+	}
+	
+	.aui .row-fluid .width2of12right{
+		width: auto;
+		float: left;
+		margin-left: initial;
+	}
+	
+	.aui .row-fluid .width2of12left{
+		width: auto;
+		float: left;
+	}
+
+	.aui .row-fluid .width8of12{
+		margin-left: initial;		
+		width: auto;
+		float: left;
+    }
+
+}

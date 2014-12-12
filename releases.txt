@@ -1,6 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.15 - 2014-12-12
+* styled tablet body as specified
+
 6.2.1.14 - 2014-12-05
 * intermediate fix for faulty custom layouts (Responsive Design)<-- does not satisfy requirements yet
 

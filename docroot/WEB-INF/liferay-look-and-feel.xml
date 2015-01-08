@@ -14,6 +14,7 @@
 			<setting key="sponsorArticleId" value="SYSTEM_SPONSOR" />
 		    <setting key="advertisementId" value="ADVERTISEMENT" />
 		    <setting key="headerBackgroundImage" value="HEADER-HINTERGRUND-LINK" />
+		    <setting key="defaultDKImage" value="DEFAULT-DK-IMAGE" />
 		    <setting key="languages" value="de_DE,en_US,es_ES,sv_SE" />
 		    <setting configurable="true" key="bullet-style" options="dots,arrows" type="select" value="dots" />		
 		    <setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="true" />

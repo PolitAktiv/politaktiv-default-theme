@@ -1,6 +1,12 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.17 2015-28-01
+* added carousel styles 
+
+6.2.1.16 - 2015-08-01
+* added opengraph-default image settings to make the journal articles available for the open-graph-hook
+
 6.2.1.15 - 2014-12-12
 * styled tablet body as specified
 

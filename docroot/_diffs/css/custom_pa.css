@@ -215,13 +215,12 @@ div[id^="p_p_id_31"] > .portlet-borderless-container{
 
 .carousel, .carousel-item{
 	height: initial !important;
+	width: initial !important;
 }
 
 .carousel, .carousel-content, .carousel-item, .carousel-item img{
 	max-width: 100% !important;
-	min-width: 100% !important;
 	max-height: inherit !important;
-	min-height: inherit !important;
 }
 
 .carousel-content menu{

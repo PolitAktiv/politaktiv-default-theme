@@ -120,9 +120,23 @@
 
 /*------ Basics Tablet --------*/
 
+	//font size
 	.aui body {
-   		 font-size: 10px;
+   		font-size: 10px;
 	}
 
+	// padding
+	.aui #wrapper {
+   		padding-left: 0px;
+    		padding-right: 4px;
+	}
 
+	// header was adjusted upwards (see: comment above: fix banner position); make the content follow:
+
+	#content {
+    		position: relative;
+    		bottom: 60px;
+	}
+
+	
 }

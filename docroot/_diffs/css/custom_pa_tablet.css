@@ -1,6 +1,8 @@
-/*------ Header Tablet --------*/
+
 
 @include respond-to(tablet){ 
+
+/*------ Header Tablet --------*/
 
 	//fix banner position
 	#banner {
@@ -116,6 +118,11 @@
 	}
 
 
+/*------ Basics Tablet --------*/
+
+	.aui body {
+   		 font-size: 10px;
+	}
 
 
 }

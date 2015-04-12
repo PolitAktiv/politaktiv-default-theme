@@ -98,4 +98,11 @@
 		float: left;
     }
 
+/*------ Basics Tablet --------*/
+
+	.aui body {
+   		 font-size: 8px;
+	}
+
+
 }

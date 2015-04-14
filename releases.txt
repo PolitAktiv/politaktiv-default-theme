@@ -1,6 +1,9 @@
 politaktiv-theme ReleaseNotes:
 ==============================
 
+6.2.1.18 2015-14-04
+* improved tablet design
+
 6.2.1.17 2015-28-01
 * added carousel styles 
 

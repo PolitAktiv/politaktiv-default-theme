@@ -101,7 +101,13 @@
 /*------ Basics Tablet --------*/
 
 	.aui body {
-   		 font-size: 8px;
+   		 font-size: 9px;
+	}
+
+	// padding
+	.aui #wrapper {
+   		padding-left: 1px;
+    		padding-right: 1px;
 	}
 
 

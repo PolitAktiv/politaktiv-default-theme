@@ -4,36 +4,54 @@
 
 /*------ Header Tablet --------*/
 
-	//fix banner position
+	//fix banner and heading position
 	#banner {
-	    height: 96px;
+	    height: 64px;
 	    width: 100%;
 	    position: relative;
-	    bottom: 60px;
+	    bottom: 68px;
 	}
 	
 	.aui #heading{
 	    bottom: initial; 
 	    position: initial;
-	}
-	
-	.aui #heading .site-title img{
-	    width:initial;
-	}
-	
-	//fix logo
-	div #site-title{
-	    height: 96px; 
-	    float:left;
-	}
-	.logo {
-	    width: initial;
+	    height: 64px;
 	}
 
-	//make header-content-container big enough to hold navbar
 	#header-content-container{
-            height: auto;
+            height: 64px; 
+	    width: 60%; //value empiric
         }
+
+
+	.aui #banner .header-content{
+            height: 38px;
+	    line-height: 40px;
+        }
+	
+	//logo
+	.aui #heading .site-title img{
+	    width: 110px !important;
+	    height: 50px;
+	    padding-top: 5px;
+	}
+
+	.aui #heading .site-title{
+	    height: 64px;
+	}
+	
+	div #site-title{
+	    height: 64px; 
+	    float:left;
+	    width: 188px; // =  navbar width
+	}
+
+
+	#pa-logo {
+	    width: 188px;
+	}
+
+
 	
 	// hide other components
 	.ist-topbar, .static-social-bookmark, .language-container{
@@ -43,6 +61,7 @@
 	}
 
 
+/*------ Content Boxes Tablet --------*/
 		
 	//Change div order using flexbox
 	//add webkit for support reasons
@@ -61,11 +80,11 @@
 	}
 
 	.aui .row-fluid .width8of12{
-		width: auto;
+		width: inherit;
 	    	float: none;
-		-webkit-order: 3;
-		-moz-order: 3;
-		order: 3;	// third element thus below element 1 and 2
+		-webkit-order: 1;
+		-moz-order: 1;
+		order: 1;	// first element, thus above
 		margin: 0px;
 		padding: 0px;
     	}
@@ -76,9 +95,9 @@
 		margin: 0px;;
 		padding: 2px;
 
-		-webkit-order: 2;
-		-moz-order: 2;
-		order: 2;	// second element, thus to the right of element 1
+		-webkit-order: 3;
+		-moz-order: 3;
+		order: 3;	// second element, thus below element 1
 	}
 	
 	.aui .row-fluid .width2of12left{
@@ -87,9 +106,9 @@
 		margin: 0px;
 		padding: 2px;
 
-		-webkit-order: 1;
-		-moz-order: 1;
-		order: 1;	// first element, thus on the upper left corner
+		-webkit-order: 2;
+		-moz-order: 2;
+		order: 2;	// third element
 	}
 
 
@@ -127,8 +146,8 @@
 
 	// padding
 	.aui #wrapper {
-   		padding-left: 2px;
-    		padding-right: 4px;
+   		padding-left: 1px;
+    		padding-right: 1px;
 	}
 
 	// header was adjusted upwards (see: comment above: fix banner position); make the content follow:

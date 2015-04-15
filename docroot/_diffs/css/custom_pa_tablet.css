@@ -9,13 +9,13 @@
 	    height: 64px;
 	    width: 100%;
 	    position: relative;
-	    bottom: 68px;
+	    bottom: 69px;
 	}
 	
 	.aui #heading{
-	    bottom: initial; 
-	    position: initial;
+	    bottom: auto; 
 	    height: 64px;
+	    width: 100%;
 	}
 
 	#header-content-container{

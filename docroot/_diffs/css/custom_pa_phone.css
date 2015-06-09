@@ -13,7 +13,16 @@
 	    height: 96px;
 	    width: 100%;
 	    position: relative;
-	    bottom: 60px;
+	    bottom: 68px;
+	}
+	
+	#wrapper #content{
+		position: relative;
+		bottom: 96px;
+	}
+	#wrapper #footer{
+		position: relative;
+		bottom: 114px;
 	}
 	
 	.aui #heading{
@@ -21,18 +30,57 @@
 	    position: initial;
 	}
 	
+	.aui #banner .header-content{
+		font-size: 1.6em;
+		font-weight: normal;
+	}
+	
+	#header-content-container{
+        height: 64px; 
+	    width: 60%; //value empiric
+	}
+	
+	.aui #breadcrumbs a {
+		font-size: 0.7em; //value empiric
+	}
+
+
+	.aui #banner .header-content {
+		line-height: 40px;	
+		height: 38px; // header-content-contanter-heigt - breadcrumb-height
+	}
+	
 	.aui #heading .site-title img{
 	    width:initial;
 	}
 	
 	//fix logo
+
+	.aui #heading .site-title img{
+	    width: 110px !important;
+	    height: 50px;
+	    padding-top: 5px;
+	}
+
+	.aui #heading .site-title{
+	    height: 63px;
+	}
+	
 	div #site-title{
-	    height: 96px; 
+	    height: 63px; // = navbar height
 	    float:left;
+	    width: 188px; // =  navbar width
 	}
-	.logo {
-	    width: initial;
+
+
+	#pa-logo {
+	    width: 188px; // =  navbar width
 	}
+	
+	// header background image
+    #header-background-image{
+    	    height: 63px !important;
+    }
 
 	//make header-content-container big enough to hold navbar
 	#header-content-container{
@@ -52,56 +100,60 @@
 		width: auto; 
 		float: left;
 		margin-right: initial;
+		padding: 2px;
 	}
 	
 	 .aui .row-fluid .width5of12right{
 	 	width: auto;
 	 	float: left;
+	 	padding: 2px;
 	 }
 	
 	.aui .row-fluid .width3of12left{
 		width: auto; 
 		float: left;
 		margin-right: initial;
+		padding: 2px;
 	}
 	
 	.aui .row-fluid .width3of12right{
 		width: auto;
 		float: left;
+		padding: 2px;
 	} 
 	
 	.aui .row-fluid .width4of12left{
 		width: auto; 
 		float: left;
 		margin-right: initial;
+		padding: 2px;
 	}
 	
 	.aui .row-fluid .width4of12right{
 		width: auto;
 		float: left;
-	}
-	
-	.aui .row-fluid .width2of12right{
-		width: auto;
-		float: left;
-		margin-left: initial;
-	}
-	
-	.aui .row-fluid .width2of12left{
-		width: auto;
-		float: left;
+		padding: 2px;
 	}
 
 	.aui .row-fluid .width8of12{
 		margin-left: initial;		
 		width: auto;
 		float: left;
+		padding: 2px;
     }
+    
+    .aui .row-fluid .smartphone-only-content{
+		padding: 2px;
+    }
+    
+
 
 /*------ Basics Phone --------*/
 
 	.aui body {
    		 font-size: 12pt;
+   		 padding-left: 0px;
+   		 padding-right: 0px;
 	}
 
 	// padding

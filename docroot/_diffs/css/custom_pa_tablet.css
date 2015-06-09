@@ -19,15 +19,15 @@
 	}
 
 	#header-content-container{
-            height: 64px; 
+        height: 64px; 
 	    width: 60%; //value empiric
-        }
+	}
 
 
-	.aui #banner .header-content{
-            height: 38px;
+	.aui #banner .header-content {
+		height: 38px;
 	    line-height: 40px;
-        }
+	}
         
 	// header background image
     	#header-background-image{
@@ -152,7 +152,7 @@
 	// padding
 	.aui #wrapper {
    		padding-left: 1px;
-    		padding-right: 1px;
+    	padding-right: 1px;
 	}
 
 	// header was adjusted upwards (see: comment above: fix banner position); make the content follow:

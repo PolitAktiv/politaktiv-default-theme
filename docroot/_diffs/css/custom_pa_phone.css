@@ -113,11 +113,14 @@
 	// extra smartphone block
 	
 	// for testing purposes: color and sizes
-	.smartphone-only-content { 
-	background-color: blue; 
-	height: 50px;
-	width: 80%;
-	visibility: visible;
+	
+	/* ---------- Hide/show content depending on device ---------- */
+	#smartphone-content-control, .hide-for-mobile-device {
+		display: none;
+	}
+	
+	#smartphone-only-content-container { 
+		display: block;
 	}
 	
 	// hide boxes
@@ -128,10 +131,5 @@
 		padding: 0px;
 		visibility: hidden;
 	}
-	
-	
-	
-
-
 	
 }

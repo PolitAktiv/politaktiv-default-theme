@@ -81,6 +81,28 @@ $theme.include($body_top_include)
 			$theme.wrapPortlet("portlet.vm", $content_include)
 		#end
 	</div>
+	
+	#if ($canSetSmartphoneContent)
+		<div id="smartphone-content-control" class="hide-for-mobile-device">
+			<p> Dies ist eine Funktion für die Moderatoren und Administratoren von Politaktiv. Sollten Sie die unten stehende Schaltfläche als normaler Nutzer von Politaktiv sehen, so bitten wir Sie, uns auf diesen Fehler hinzuweisen. </p>
+			
+			<button id="smartphone-content-toggle">
+				Smartphone-Content-Anzeige umschalten
+			</button> 
+			
+			<script>
+			document.getElementById('smartphone-content-toggle').onclick = function() {
+    			var div = document.getElementById('smartphone-only-content-container');
+   				if (div.style.display !== 'block') {
+        			div.style.display = 'block';
+    			}
+    			else {
+        			div.style.display = 'none';
+    			}
+			};
+			</script>
+		</div>
+	#end
 
 	<footer id="footer" role="contentinfo">
 		<span> $footerContent </span>

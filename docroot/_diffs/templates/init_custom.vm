@@ -18,6 +18,7 @@ This file allows you to override and define new Velocity variables.
 #set($bShowCtlPanelLink		= false)
 #set($bShowDockbarPortlet	= false)
 #set($show_site_name		= false)
+#set($canSetSmartphoneContent = $permissionChecker.isCompanyAdmin() || $permissionChecker.isCommunityAdmin($getterUtil.getLong($group_id)) )
 
 #* ---------- Set preferences for global language portlet. ------------ *#
 #set($void = $velocityPortletPreferences.setValue('displayStyle', '0'))

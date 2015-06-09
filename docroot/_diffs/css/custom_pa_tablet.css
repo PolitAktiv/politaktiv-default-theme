@@ -162,12 +162,12 @@
     		bottom: 60px;
 	}
 	
-	/* ---------- Hide smartphone-only content ---------- */
-	.smartphone-only-content {
-		visibility: hidden;
-		height: 0px;
-		width: 0px;
+	/* ---------- Hide/show content depending on device ---------- */
+	.smartphone-only-content-container, #smartphone-content-control, .hide-for-mobile-device {
+		display: none;
 	}
+	
+	
 
 	
 }

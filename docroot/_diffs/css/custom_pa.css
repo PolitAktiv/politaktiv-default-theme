@@ -308,3 +308,10 @@ div.politaktiv-theme-footer ul li a{
 	margin-left: 1%;
 	width: 68%;
 }
+
+/* ---------- Hide smartphone-only content ---------- */
+.smartphone-only-content {
+	visibility: hidden;
+	height: 0px;
+	width: 0px;
+}

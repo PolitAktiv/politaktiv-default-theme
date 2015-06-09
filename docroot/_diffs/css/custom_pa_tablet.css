@@ -161,6 +161,13 @@
     		position: relative;
     		bottom: 60px;
 	}
+	
+	/* ---------- Hide smartphone-only content ---------- */
+	.smartphone-only-content {
+		visibility: hidden;
+		height: 0px;
+		width: 0px;
+	}
 
 	
 }

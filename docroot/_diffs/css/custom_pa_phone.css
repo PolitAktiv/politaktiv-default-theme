@@ -107,8 +107,31 @@
 	// padding
 	.aui #wrapper {
    		padding-left: 1px;
-    		padding-right: 1px;
+    	padding-right: 1px;
 	}
 
+	// extra smartphone block
+	
+	// for testing purposes: color and sizes
+	.smartphone-only-content { 
+	background-color: blue; 
+	height: 50px;
+	width: 80%;
+	visibility: visible;
+	}
+	
+	// hide boxes
+	.aui .row-fluid .width2of12right, .aui .row-fluid .width2of12left{
+		width: 0px;
+		height: 0px;
+		margin: 0px;;
+		padding: 0px;
+		visibility: hidden;
+	}
+	
+	
+	
 
+
+	
 }

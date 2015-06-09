@@ -98,10 +98,10 @@
 		float: left;
     }
 
-/*------ Basics Tablet --------*/
+/*------ Basics Phone --------*/
 
 	.aui body {
-   		 font-size: 9px;
+   		 font-size: 12pt;
 	}
 
 	// padding

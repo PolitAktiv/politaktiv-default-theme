@@ -2,76 +2,88 @@
 
 @include respond-to(tablet){ 
 
-/*------ Header Tablet --------*/
-
-	//fix banner and heading position
-	#banner {
-	    height: 64px;
-	    width: 100%;
-	    position: relative;
-	    bottom: 69px;
-	}
-	
-	.aui #heading{
-	    bottom: auto; 
-	    height: 64px;
-	    width: 100%;
-	}
-
-	#header-content-container{
-        height: 64px; 
-	    width: 60%; //value empiric
-	}
+/*------ Header --------*/
 
 
-	.aui #banner .header-content {
-		height: 38px;
-	    line-height: 40px;
-	}
-        
-	// header background image
-    	#header-background-image{
-    	    height: 61px !important;
-    	}
-	
-	//logo
-	.aui #heading .site-title img{
-	    width: 110px !important;
-	    height: 50px;
-	    padding-top: 5px;
-	}
+/*rearrange wrapper*/
+#wrapper, #heading{
+	position: relative !important;
+}
+#heading{
+	bottom: 0px !important;
+}
+#wrapper{
+	bottom: 82px !important;
+}
 
-	.aui #heading .site-title{
-	    height: 64px;
-	}
-	
-	div #site-title{
-	    height: 64px; 
-	    float:left;
-	    width: 188px; // =  navbar width
-	}
+/*set heights to 63px (== height of admin bar)*/
+#wrapper, #banner, #heading, .site-title, #header-background-image, #header-content-container{ 
+	height: 63px;
+}
+
+/*set widths*/
+#banner, #heading{
+	width: 100%;
+}
+
+/*make headerbox float next to logo box*/
+#site-title {
+	float: left;
+}
+
+/*hide not-used header contents*/
+.language-container, .static-social-bookmark, .ist-topbar{
+	display:none;
+}
 
 
-	#pa-logo {
-	    width: 188px;
-	}
+#banner{
+	padding-bottom: 2px;
+}
 
+/*Logo*/
 
-	
-	// hide other components
-	.ist-topbar, .static-social-bookmark, .language-container{
-	    visibility: hidden; 
-	    height:0px; 
-	    width:0px;
-	}
+.logo{
+	padding: 0px;	
+	text-align: center;
+}
+
+.logo, .aui #heading .site-title{
+	width: 100px;
+}
+
+.aui #heading .site-title img{
+	width: 110px;
+	padding-top: 6px;
+}
+
+#site-title{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+/*Headerbox: breadcrumbs and header-content*/
+.aui #breadcrumbs ul{
+	padding: 0px 0px 0px 0px;
+	max-height: 24px;
+	white-space: nowrap;
+}
+
+.aui #banner .header-content{
+	max-height: 39px; /*(==63-24)*/
+	white-space: nowrap;
+	font-size: 2em;
+	font-weight: normal;
+	line-height: 40px;
+}
 
 
 /*------ Content Boxes Tablet --------*/
 		
-	//Change div order using flexbox
-	//add webkit for support reasons
+	/*Change div order using flexbox
+	add webkit for support reasons */
 
-	//set containers
+	/* set containers */
 
 	.flex-container{
 
@@ -86,7 +98,7 @@
 
 	.aui .row-fluid .width8of12{
 		width: inherit;
-	    	float: none;
+	    float: none;
 		-webkit-order: 1;
 		-moz-order: 1;
 		order: 1;	// first element, thus above
@@ -117,7 +129,7 @@
 	}
 
 
-	//set specified widths and margins
+	/* set specified widths and margins */
 
 	 .aui .row-fluid .width5of12right, .aui .row-fluid .width5of12left {
 		width: 61.5%;
@@ -140,34 +152,34 @@
 		margin: 0px;
 		padding: 2px;
 	}
-
-
-/*------ Basics Tablet --------*/
-
-	//font size
-	.aui body {
-   		font-size: 10px;
-	}
-
-	// padding
+	
 	.aui #wrapper {
    		padding-left: 1px;
     	padding-right: 1px;
 	}
 
-	// header was adjusted upwards (see: comment above: fix banner position); make the content follow:
 
-	#content {
-    		position: relative;
-    		bottom: 60px;
+/*------ Basics Tablet --------*/
+
+	.aui body {
+   		font-size: 10px;
 	}
-	
-	/* ---------- Hide/show content depending on device ---------- */
+	.portlet-column-content.empty {
+    	padding: 0px;
+	}
+
 	.smartphone-only-content-container, #smartphone-content-control, .hide-for-mobile-device {
 		display: none;
 	}
+		
+	.aui .lfr-hudcrumbs{
+		display: none;
+	}
 	
+	/* ---------- Footer ---------- */
 	
-
+	#footer{
+		width: 100%
+	}
 	
 }

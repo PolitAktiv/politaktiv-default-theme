@@ -1,100 +1,100 @@
 
-// intermediate default behavior
-
-
 
 @include respond-to(phone){ 
 
+/*
+assumes, that size of adminbar is 
+188x63
+however this differs slightly, depending on the chosen account picture 
+*/
 
-/*------ Header Phone --------*/
 
-	//fix banner position
-	#banner {
-	    height: 96px;
-	    width: 100%;
-	    position: relative;
-	    bottom: 68px;
+/*------ Header--------*/
+
+
+	/*rearrange wrapper*/
+	#wrapper, #heading{
+		position: relative !important;
+	}
+	#heading{
+		bottom: 0px !important;
+	}
+	#wrapper{
+		bottom: 70px !important;
 	}
 	
-	#wrapper #content{
-		position: relative;
-		bottom: 96px;
-	}
-	#wrapper #footer{
-		position: relative;
-		bottom: 114px;
+	/*set heights to 63px (== height of admin bar)*/
+	#wrapper, #banner, #heading, .site-title, #header-background-image, #header-content-container, .logo{
+		height: 63px;
 	}
 	
-	.aui #heading{
-	    bottom: initial; 
-	    position: initial;
+	/*make headerbox float next to logo box*/
+	#site-title {
+		float: left;
+	}
+	
+	/*hide not-used header contents*/
+	.language-container, .static-social-bookmark, .ist-topbar{
+		display:none;
+	}
+	
+	
+
+/*Logobox*/
+
+	.logo{
+		padding: 0px;	
+		text-align: center;
+	}
+	.logo, .aui #heading .site-title{
+		width: 100px;
+	}
+	
+	.aui #heading .site-title img{
+		width: 110px; 
+		padding-top: 6px;
+	}
+	
+	#site-title{
+		padding-right: 12px;
+		padding-left: 12px;
+	}
+	
+	/*Headerbox := breadcrumbs and header content*/
+	
+	.aui #breadcrumbs ul{
+		padding: 0px 0px 0px 0px;
+		max-height: 24px; /*(==63-39)*/
+		white-space: nowrap;  
 	}
 	
 	.aui #banner .header-content{
+		max-height: 39px; /*(==63-24)*/
+		min-width: 100%;
+		white-space: nowrap; 
 		font-size: 1.6em;
 		font-weight: normal;
+		line-height: 40px;
 	}
 	
 	#header-content-container{
-        height: 64px; 
-	    width: 60%; //value empiric
+		max-width: inherit;
+		width: 450px; /*empirically fine value*/
 	}
 	
-	.aui #breadcrumbs a {
-		font-size: 0.7em; //value empiric
+	#header-background-image{
+		width: 100%;
+	}
+		
+	@media (max-width: 600px) { /*empirically fine value --> makes the header-content-container jump into next line when device gets really small*/
+  		#header-content-container {
+    			width:100%
+  		}
 	}
 
+/*------ Content Phone --------*/
 
-	.aui #banner .header-content {
-		line-height: 40px;	
-		height: 38px; // header-content-contanter-heigt - breadcrumb-height
-	}
-	
-	.aui #heading .site-title img{
-	    width:initial;
-	}
-	
-	//fix logo
-
-	.aui #heading .site-title img{
-	    width: 110px !important;
-	    height: 50px;
-	    padding-top: 5px;
-	}
-
-	.aui #heading .site-title{
-	    height: 63px;
-	}
-	
-	div #site-title{
-	    height: 63px; // = navbar height
-	    float:left;
-	    width: 188px; // =  navbar width
-	}
-
-
-	#pa-logo {
-	    width: 188px; // =  navbar width
-	}
-	
-	// header background image
-    #header-background-image{
-    	    height: 63px !important;
-    }
-
-	//make header-content-container big enough to hold navbar
-	#header-content-container{
-            height: auto;
-        }
-	
-	// hide other components
-	.ist-topbar, .static-social-bookmark, .language-container{
-	    visibility: hidden; 
-	    height:0px; 
-	    width:0px;
-	}
-
-//reset custom layout columns 
+/*reset custom layout columns */
 
 	.aui .row-fluid .width5of12left{
 		width: auto; 
@@ -156,17 +156,23 @@
    		 padding-right: 0px;
 	}
 
-	// padding
 	.aui #wrapper {
    		padding-left: 1px;
     	padding-right: 1px;
 	}
 
-	// extra smartphone block
+	/*hide hudcrumbs*/
+	.aui .lfr-hudcrumbs{
+		display: none;
+	}
+
+	.portlet-column-content.empty {
+    	padding: 0px;
+	}
 	
-	// for testing purposes: color and sizes
 	
-	/* ---------- Hide/show content depending on device ---------- */
+	/* ---------- Smartphone-only content ---------- */
+	
 	#smartphone-content-control, .hide-for-mobile-device {
 		display: none;
 	}
@@ -175,13 +181,13 @@
 		display: block;
 	}
 	
-	// hide boxes
+	/* hide boxes */
 	.aui .row-fluid .width2of12right, .aui .row-fluid .width2of12left{
 		width: 0px;
 		height: 0px;
-		margin: 0px;;
+		margin: 0px;
 		padding: 0px;
-		visibility: hidden;
+		display: none;
 	}
 	
 }

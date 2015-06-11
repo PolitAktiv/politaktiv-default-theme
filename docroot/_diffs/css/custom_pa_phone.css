@@ -171,6 +171,10 @@ however this differs slightly, depending on the chosen account picture
     	padding: 0px;
 	}
 	
+	.aui .dockbar{
+		left: -20px;
+	}
+	
 	
 	/* ---------- Smartphone-only content ---------- */
 	

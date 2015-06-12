@@ -172,9 +172,6 @@
 
 
 	/*Hide components*/
-	.smartphone-only-content-container, .hide-for-mobile-device {
-		display: none;
-	}
 		
 	.aui .lfr-hudcrumbs{
 		display: none;

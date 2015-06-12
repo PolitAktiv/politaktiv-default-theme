@@ -188,11 +188,7 @@ however this differs slightly, depending on the chosen account picture
 	
 	/* ---------- Smartphone-only content ---------- */
 	
-	.hide-for-mobile-device {
-		display: none;
-	}
-	
-	#smartphone-only-content-container { 
+	#smartphone-exclusive-content-container { 
 		display: block;
 	}
 	

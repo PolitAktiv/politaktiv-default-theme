@@ -310,7 +310,7 @@ div.politaktiv-theme-footer ul li a{
 }
 
 /* ---------- Hide smartphone-only content ---------- */
-#smartphone-only-content-container {  
+#smartphone-exclusive-content-container, #smartphone-help-text {  
 	display: none;
 } 
 

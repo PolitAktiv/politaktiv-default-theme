@@ -83,21 +83,22 @@ $theme.include($body_top_include)
 	</div>
 	
 	#if ($canSetSmartphoneContent)
-		<div id="smartphone-content-control">
-			<p> Dies ist eine Funktion für die Moderatoren und Administratoren von Politaktiv. Sollten Sie die unten stehende Schaltfläche als normaler Nutzer von Politaktiv sehen, so bitten wir Sie, uns auf diesen Fehler hinzuweisen. </p>
-			
+		<div id="smartphone-content-control">			
 			<button id="smartphone-content-toggle">
 				Smartphone-Content-Anzeige umschalten
 			</button> 
 			
 			<script>
 			document.getElementById('smartphone-content-toggle').onclick = function() {
-    			var div = document.getElementById('smartphone-only-content-container');
+    			var div = document.getElementById('smartphone-exclusive-content-container');
+    			var t = document.getElementById('smartphone-help-text');
    				if (div.style.display !== 'block') {
         			div.style.display = 'block';
+        			t.style.display = 'block';
     			}
     			else {
         			div.style.display = 'none';
+        			t.style.display = 'none';
     			}
 			};
 			</script>

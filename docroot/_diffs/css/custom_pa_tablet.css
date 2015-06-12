@@ -164,10 +164,14 @@
 	.aui body {
    		font-size: 12px;
 	}
+	
+	/*empty columns also need space, remove padding*/
 	.portlet-column-content.empty {
     	padding: 0px;
 	}
 
+
+	/*Hide components*/
 	.smartphone-only-content-container, .hide-for-mobile-device {
 		display: none;
 	}

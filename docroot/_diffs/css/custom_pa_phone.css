@@ -175,10 +175,12 @@ however this differs slightly, depending on the chosen account picture
 		display: none;
 	}
 
+	/*empty columns also need space, remove padding*/
 	.portlet-column-content.empty {
     	padding: 0px;
 	}
 	
+	/*move adminbar so that it does not overflow the content*/
 	.aui .dockbar{
 		left: -20px;
 	}

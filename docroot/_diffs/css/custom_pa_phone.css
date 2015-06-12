@@ -52,12 +52,12 @@ however this differs slightly, depending on the chosen account picture
 	
 	.aui #heading .site-title img{
 		width: 110px; 
-		padding-top: 6px;
+		padding-top: 7px;
 	}
 	
 	#site-title{
-		padding-right: 12px;
-		padding-left: 12px;
+		padding-right: 14px;
+		padding-left: 14px;
 	}
 	
 	/*Headerbox := breadcrumbs and header content*/
@@ -89,7 +89,10 @@ however this differs slightly, depending on the chosen account picture
 		
 	@media (max-width: 600px) { /*empirically fine value --> makes the header-content-container jump into next line when device gets really small*/
   		#header-content-container {
-    			width:100%
+    		width:100%
+  		}
+  		#content{
+  			padding-top: 63px;
   		}
 	}
 
@@ -147,6 +150,11 @@ however this differs slightly, depending on the chosen account picture
 		padding: 2px;
     }
     
+    .aui .portlet-boundary{
+    	padding-top: 1px;
+    	padding-bottom: 1px;
+    }
+    
 
 
 /*------ Basics Phone --------*/
@@ -178,7 +186,7 @@ however this differs slightly, depending on the chosen account picture
 	
 	/* ---------- Smartphone-only content ---------- */
 	
-	#smartphone-content-control, .hide-for-mobile-device {
+	.hide-for-mobile-device {
 		display: none;
 	}
 	

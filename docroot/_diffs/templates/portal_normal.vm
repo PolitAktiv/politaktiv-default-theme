@@ -83,7 +83,7 @@ $theme.include($body_top_include)
 	</div>
 	
 	#if ($canSetSmartphoneContent)
-		<div id="smartphone-content-control" class="hide-for-mobile-device">
+		<div id="smartphone-content-control">
 			<p> Dies ist eine Funktion für die Moderatoren und Administratoren von Politaktiv. Sollten Sie die unten stehende Schaltfläche als normaler Nutzer von Politaktiv sehen, so bitten wir Sie, uns auf diesen Fehler hinzuweisen. </p>
 			
 			<button id="smartphone-content-toggle">

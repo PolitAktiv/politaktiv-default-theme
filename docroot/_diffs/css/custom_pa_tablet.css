@@ -54,12 +54,12 @@
 
 .aui #heading .site-title img{
 	width: 110px;
-	padding-top: 6px;
+	padding-top: 7px;
 }
 
 #site-title{
-	padding-right: 12px;
-	padding-left: 12px;
+	padding-right: 14px;
+	padding-left: 14px;
 }
 
 /*Headerbox: breadcrumbs and header-content*/
@@ -162,13 +162,13 @@
 /*------ Basics Tablet --------*/
 
 	.aui body {
-   		font-size: 10px;
+   		font-size: 12px;
 	}
 	.portlet-column-content.empty {
     	padding: 0px;
 	}
 
-	.smartphone-only-content-container, #smartphone-content-control, .hide-for-mobile-device {
+	.smartphone-only-content-container, .hide-for-mobile-device {
 		display: none;
 	}
 		

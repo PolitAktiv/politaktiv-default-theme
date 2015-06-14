@@ -169,14 +169,12 @@
 	.portlet-column-content.empty {
     	padding: 0px;
 	}
-
-
-	/*Hide components*/
-		
-	.aui .lfr-hudcrumbs{
-		display: none;
-	}
 	
+	#smartphone-content-toggle{
+		margin-right: 0px;
+	}
+
+		
 	/* ---------- Footer ---------- */
 	
 	#footer{

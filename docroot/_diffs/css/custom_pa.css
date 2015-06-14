@@ -156,7 +156,7 @@ a.aui pre,
 .aui .breadcrumb > li{
     position: relative;
     z-index: 1;
-    background-color: #FFF;
+    background-color: initial;
 }
   
 /*-------------- Language Container -----------*/  
@@ -314,3 +314,15 @@ div.politaktiv-theme-footer ul li a{
 	display: none;
 } 
 
+
+#smartphone-content-toggle{
+	color: white;
+	background-image: linear-gradient(#41F68E 0px, #169656 47%, #41F68E 100%);
+	position: fixed;
+	z-index: 325;
+	right: 0px;
+	top: 90%;
+	left: auto;
+	margin-right: 60px;
+	width: 150px;
+}

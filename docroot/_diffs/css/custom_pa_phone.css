@@ -170,14 +170,14 @@ however this differs slightly, depending on the chosen account picture
     	padding-right: 1px;
 	}
 
-	/*hide hudcrumbs*/
-	.aui .lfr-hudcrumbs{
-		display: none;
-	}
 
 	/*empty columns also need space, remove padding*/
 	.portlet-column-content.empty {
     	padding: 0px;
+	}
+	
+	#smartphone-content-toggle{
+		margin-right: 0px;
 	}
 	
 	/*move adminbar so that it does not overflow the content*/

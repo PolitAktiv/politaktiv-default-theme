@@ -84,7 +84,7 @@ $theme.include($body_top_include)
 	
 	#if ($canSetSmartphoneContent)
 		<div id="smartphone-content-control">			
-			<button id="smartphone-content-toggle">
+			<button id="smartphone-content-toggle" class"btn">
 				Smartphone-Content-Anzeige umschalten
 			</button> 
 			
